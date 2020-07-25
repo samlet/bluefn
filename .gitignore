@@ -54,3 +54,6 @@ allFiredEvents
 .openzeppelin/.session
 /.openzeppelin/
 /bluefn.egg-info/
+
+dist/
+/notebook/.ipynb_checkpoints/
