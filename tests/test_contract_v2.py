@@ -3,6 +3,9 @@ $ pytest -s -v test_contract_v2.py
 """
 import pytest
 import os
+import logging
+
+logger = logging.getLogger(__name__)
 
 from web3 import (
     EthereumTesterProvider,
@@ -28,6 +31,9 @@ def w3(tester_provider):
 @pytest.fixture
 def foo_contract(eth_tester, w3):
     from bluefn.utils.contracts_util import compile_contract
+
+    logger.info("current dir: %s", os.getcwd())
+
     deploy_address = eth_tester.get_accounts()[0]
     abi, bytecode= compile_contract('../contracts/foo.sol')
     # Create our contract class.
@@ -40,7 +46,6 @@ def foo_contract(eth_tester, w3):
     tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash, 180)
     # instantiate and return an instance of our contract.
     return FooContract(tx_receipt.contractAddress)
-
 
 def test_initial_greeting(foo_contract):
     hw = foo_contract.caller.bar()
