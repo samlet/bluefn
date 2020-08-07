@@ -25,3 +25,4 @@ def compile_contract(file_path):
     compiled_sol = compile_source_file(file_path)
     contract_id, contract_interface = compiled_sol.popitem()
     return contract_interface['abi'], contract_interface['bin']
+

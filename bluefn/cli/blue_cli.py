@@ -37,4 +37,8 @@ class BlueCli(object):
         else:
             self.gen(name)
 
+    def eth_connected(self, test=True):
+        from bluefn.eth.contract_loader import ContractLoader
+        loader=ContractLoader(provider='tester' if test else 'local')
+        return loader.connected
 
