@@ -6,7 +6,7 @@
 
 pragma solidity ^0.4.6;
 
-import "zeppelin/contracts/math/SafeMath.sol";
+import "openzeppelin-solidity/contracts/math/SafeMath.sol";
 import "./Crowdsale.sol";
 import "./Haltable.sol";
 

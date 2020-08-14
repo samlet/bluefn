@@ -10,7 +10,7 @@ pragma solidity ^0.4.18;
 
 import "./SecurityTransferAgentInterface.sol";
 import "./ERC677Token.sol";
-import "zeppelin/contracts/math/SafeMath.sol";
+import "openzeppelin-solidity/contracts/math/SafeMath.sol";
 
 /**
  * @author TokenMarket /  Ville Sundell <ville at tokenmarket.net>

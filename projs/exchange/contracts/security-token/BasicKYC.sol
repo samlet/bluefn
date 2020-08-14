@@ -10,7 +10,7 @@ pragma solidity ^0.4.24;
 
 import "./KYCAttributes.sol";
 import "./KYCInterface.sol";
-import "zeppelin/contracts/ownership/rbac/RBAC.sol";
+import "openzeppelin-solidity/contracts/ownership/rbac/RBAC.sol";
 
 /**
  * @author TokenMarket /  Ville Sundell <ville at tokenmarket.net>

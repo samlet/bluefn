@@ -16,7 +16,7 @@ pragma solidity ^0.4.18;
  */
 
 import "./Recoverable.sol";
-import "zeppelin/contracts/math/SafeMath.sol";
+import "openzeppelin-solidity/contracts/math/SafeMath.sol";
 
 contract PaymentSplitter is Recoverable {
   using SafeMath for uint256; // We use only uint256 for safety reasons (no boxing)

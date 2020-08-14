@@ -5,7 +5,7 @@ import "../KYCAttributes.sol";
 import "../KYCInterface.sol";
 import "../CheckpointToken.sol";
 import "../ERC865.sol";
-import "zeppelin/contracts/token/ERC20/StandardToken.sol";
+import "openzeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
 
 contract InvestorInteractionContract is BogusAnnouncement, CheckpointToken, ERC865, KYCAttributes {
   uint256 public checkpointID;

@@ -13,8 +13,8 @@ import "./ERC20SnapshotMixin.sol";
 import "./ERC865.sol";
 import "./AnnouncementInterface.sol";
 import "../Recoverable.sol";
-import "zeppelin/contracts/math/SafeMath.sol";
-import "zeppelin/contracts/ownership/rbac/RBAC.sol";
+import "openzeppelin-solidity/contracts/math/SafeMath.sol";
+import "openzeppelin-solidity/contracts/ownership/rbac/RBAC.sol";
 
 
 /**

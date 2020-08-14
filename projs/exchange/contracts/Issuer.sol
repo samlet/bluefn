@@ -7,7 +7,7 @@
 pragma solidity ^0.4.8;
 
 import "./StandardTokenExt.sol";
-import "zeppelin/contracts/ownership/Ownable.sol";
+import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
 
 /**
  * Issuer manages token distribution after the crowdsale.

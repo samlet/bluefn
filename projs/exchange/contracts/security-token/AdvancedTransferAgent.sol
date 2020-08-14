@@ -2,7 +2,7 @@ pragma solidity ^0.4.18;
 
 import "./KYCInterface.sol";
 import "./RestrictedTransferAgent.sol";
-import "zeppelin/contracts/ownership/Ownable.sol";
+import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
 
 contract AdvancedTransferAgent is RestrictedTransferAgent, Ownable {
   /** @dev Mapping of addresses which are permitted to make a transfer in any situation: */

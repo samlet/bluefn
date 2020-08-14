@@ -6,7 +6,7 @@
 
 pragma solidity ^0.4.14;
 
-import "zeppelin/contracts/token/ERC20/StandardToken.sol";
+import "openzeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
 import "./Recoverable.sol";
 
 

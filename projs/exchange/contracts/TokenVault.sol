@@ -10,7 +10,7 @@ pragma solidity ^0.4.8;
 import "./Recoverable.sol";
 import "./SafeMathLib.sol";
 import "./StandardTokenExt.sol";
-import "zeppelin/contracts/ownership/Ownable.sol";
+import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
 
 /**
  * Hold tokens for a group investor of investors until the unlock date.
