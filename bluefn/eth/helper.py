@@ -14,3 +14,6 @@ def balance(web3: Web3, address: str):
 def role(role_name:str):
     return Web3.soliditySha3(['bytes32'], [role_name.encode()])
 
+def deploy(clz, admin):
+    return clz.deploy({'from': admin})
+
